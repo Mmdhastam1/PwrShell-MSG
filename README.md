@@ -5,7 +5,8 @@ Add the script as a Logon script or Startup script in GPO
 Make sure that PowerShell Execution Policy allows Executing the Scripts on the Clients.(RemoteSigned or Bypass)
 
 2.Remote PowerShell + AD:
-You can Take all of PC names from Active Directory and Execute the script on all of them :
+You can Take all of PC names from Active Directory and Execute the script on all of them
+The script is placed in "Remote PowerShell + AD:" file.
 
 
 Save it as a .ps1 file and beware of this :
