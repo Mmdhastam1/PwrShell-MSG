@@ -1,0 +1,6 @@
+Get-ADComputer -Filter * -SearchBase "OU=Computers,DC=yourdomain,DC=com" | ForEach-Object {
+    $pc = $_.Name
+    if (Test-Connection $pc -Count 1 -Quiet) {
+        msg /server:$pc * "Message to all users"
+    }
+}
